@@ -133,4 +133,4 @@ function inputarray(arr){
         console.log(error.message)
     }
 }
-const test = inputarray([1,5,45,44])
+const test = inputarray([56,45,44])
