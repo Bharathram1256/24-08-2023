@@ -122,15 +122,15 @@
 
 // write a js function that takes an array as a parameter and throws an error if length of array is less than 5.
 
-// function inputarray(arr){
-//     try{
-//         if(arr.length<5){
-//             throw Error(`${arr} length is less than 5`);
-//         }    
-//         console.log(arr);
-//     }
-//     catch(error){
-//         console.log(error.message)
-//     }
-// }
-// const test = inputarray([1,2,5,5,45,44])
+function inputarray(arr){
+    try{
+        if(arr.length<5){
+            throw new Error(`${arr}array length is less than 5`);
+        }    
+        console.log(arr);
+    }
+    catch(error){
+        console.log(error.message)
+    }
+}
+const test = inputarray([1,5,45,44])
