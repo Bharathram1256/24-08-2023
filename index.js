@@ -122,15 +122,37 @@
 
 // write a js function that takes an array as a parameter and throws an error if length of array is less than 5.
 
-function inputarray(arr){
-    try{
-        if(arr.length<5){
-            throw new Error(`${arr}  array length is less than 5`);
-        }    
-        console.log(arr);
-    }
-    catch(error){
-        console.log(error.message)
+// function inputarray(arr){
+//     try{
+//         if(arr.length<5){
+//             throw new Error(`${arr}  array length is less than 5`);
+//         }    
+//         console.log(arr);
+//     }
+//     catch(error){
+//         console.log(error.message)
+//     }
+// }
+// const test = inputarray([56,45,44])
+
+
+
+class Bike{
+    constructor(model,price){
+        this.model=model;
+        this.price=price;
     }
 }
-const test = inputarray([56,45,44])
+
+class Honda extends Bike{
+    constructor(model,price,version){
+        super(model,price);
+        this.version=version;
+    }
+}
+
+const bike1 = new Bike('kjfle3', 4343434);
+console.log(bike1);
+
+const honda1 = new Honda('34335fjdk', 543543, 'dfks322');
+console.log(honda1);
