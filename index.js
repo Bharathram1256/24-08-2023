@@ -162,14 +162,14 @@
 
 // promise in js. asynchronous operations 
 
-const promise = new Promise((resolve,reject)=>{
-    const check = true;
-    if(check==true){
-        resolved('Resolved');
-    }
-    else{
-        reject(Error('error'));
-    }
-})
-lpromise.then((resolvedValue)=>console.log(resolvedValue),
-(err)=>alert(err));
+// const promise = new Promise((resolve,reject)=>{
+//     const check = true;
+//     if(check==true){
+//         resolved('Resolved');
+//     }
+//     else{
+//         reject(Error('error'));
+//     }
+// })
+// lpromise.then((resolvedValue)=>console.log(resolvedValue),
+// (err)=>alert(err));
