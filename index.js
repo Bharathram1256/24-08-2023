@@ -137,22 +137,39 @@
 
 
 
-class Bike{
-    constructor(model,price){
-        this.model=model;
-        this.price=price;
+// class Bike{
+//     constructor(model,price){
+//         this.model=model;
+//         this.price=price;
+//     }
+// }
+
+// class Honda extends Bike{
+//     constructor(model,price,version){
+//         super(model,price);
+//         this.version=version;
+//     }
+// }
+
+// const bike1 = new Bike('kjfle3', 4343434);
+// console.log(bike1);
+
+// const honda1 = new Honda('34335fjdk', 543543, 'dfks322');
+// console.log(honda1);
+
+
+
+
+// promise in js. asynchronous operations 
+
+const promise = new Promise((resolve,reject)=>{
+    const check = true;
+    if(check==true){
+        resolved('Resolved');
     }
-}
-
-class Honda extends Bike{
-    constructor(model,price,version){
-        super(model,price);
-        this.version=version;
+    else{
+        reject(Error('error'));
     }
-}
-
-const bike1 = new Bike('kjfle3', 4343434);
-console.log(bike1);
-
-const honda1 = new Honda('34335fjdk', 543543, 'dfks322');
-console.log(honda1);
+})
+lpromise.then((resolvedValue)=>console.log(resolvedValue),
+(err)=>alert(err));
