@@ -125,7 +125,7 @@
 function inputarray(arr){
     try{
         if(arr.length<5){
-            throw new Error(`${arr}array length is less than 5`);
+            throw new Error(`${arr}  array length is less than 5`);
         }    
         console.log(arr);
     }
